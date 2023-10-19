@@ -1,0 +1,28 @@
+새로운 개발환경 구성시 작업 내용
+1) 파일 재배치
+ -
+2) react-router-dom 설치
+ - npm install react-router-dom --save
+ 
+3) react-datepicker 설치
+ - npm install react-datepicker --save
+
+4) chartjs 설치
+ - npm install react-chartjs-2 chart.js
+ 
+5) swiper 설치
+ - npm install --save swiper
+ 
+6) xlsx 설치
+ - npm install xlsx
+ 
+7) 절대 경로 지정
+ - project root 경로에 jsconfig.json 파일 생성
+ 
+8) useLocation() 은 Routes안에 존재해야한다 애러 조치
+ - root/index.js 수정
+  >> BrowserRouter import
+  >> <App /> 외부에 BrowserRouter 태그 추가 
+
+9) 기타 css/image 적용
+ - App.js에 각 css 파일 import

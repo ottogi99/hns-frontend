@@ -1,0 +1,198 @@
+@charset "utf-8";
+.wrap{height: 100% !important; width: 100%; }
+
+/*스와이퍼*/
+.swiper-pagination {position : inherit !important;}
+.swiper-slide{ height: 900px !important;}
+
+/* Board */
+/* 메인 */
+.P_MAIN::before {content: none;}
+.P_MAIN .colbox .left_col img {box-shadow: none;}
+.P_MAIN .colbox .right_col {width: 100%; padding: 0 20px;}
+.P_MAIN .mini_board .tab li + li {margin-left: 25px;}
+.P_MAIN .mini_board .tab li a {padding-bottom: 10px; font-size: 18px;}
+.P_MAIN .mini_board .list ul {margin-top: 26px;}
+.P_MAIN .mini_board .list ul > li a {width: calc(100% - 60px); font-size: 12px;}
+.P_MAIN .mini_board .list ul > li span {top: 1px; font-size: 11px;}
+.P_MAIN .mini_board .more {right: 20px; top: 37px; height: 10px; padding-left: 13px; font-size: 11px; line-height: 10px; background-size: auto 8px;}
+
+.P_MAIN {position: relative; background: #f5f5f5;}
+.P_MAIN::before {content: ""; display: block; position: absolute; left: 0; top: 0; width: 100%; height: 500px; background: #fff; background-image: url("../../public/assets/images/mainimg.png"); background-size: 100% 500px;}
+.P_MAIN .c_wrap {position: relative; width: 100%;}
+.P_MAIN .colbox::after {content: ""; display: block; clear: both;}
+.P_MAIN .colbox > * {float: left;}
+.P_MAIN .colbox .left_col {width: 500px; position: static; margin-left: 100px; margin-top: 210px;}
+.P_MAIN .colbox .center_col {position:relative; width: 300px; margin-left: 100px;  height: 380px;  margin-top: 60px; background-size: 300px 380px;  background-image: url("../../public/assets/images/mainmap.png");}
+.P_MAIN .colbox .center_col > li {position: absolute;}
+.P_MAIN .colbox .center_col > li.spot01 {left:  55px ; top :  85px} /*인천*/ 
+.P_MAIN .colbox .center_col > li.spot02 {left:  40px ; top : 125px} /*대산*/
+.P_MAIN .colbox .center_col > li.spot03 {left:  65px ; top : 120px} /*평택*/
+.P_MAIN .colbox .center_col > li.spot04 {left: 120px ; top : 280px} /*여수*/
+.P_MAIN .colbox .center_col > li.spot05 {left: 130px ; top : 270px} /*광양*/
+.P_MAIN .colbox .center_col > li.spot06 {left: 200px ; top : 245px} /*부산*/
+.P_MAIN .colbox .center_col > li.spot07 {left: 220px ; top : 215px} /*울산*/
+.P_MAIN .colbox .center_col > li > li {width: 10px; height: 10px; background-color:#0465be; margin : 0px 0px 5px 14px; border-radius: 10px;}
+.P_MAIN .colbox .center_col > li.on > li {background-color:#2fb92a; box-shadow: 0px 0px 4px 2px #2fb92a;}
+.P_MAIN .colbox .center_col > li:hover > li {width: 12px; height: 12px; background-color:#2fb92a; box-shadow: 0px 0px 7px 3px #2fb92a;}
+.P_MAIN .colbox .center_col > li:hover > a {display:block; }
+.P_MAIN .colbox .center_col > li > a {display:none; padding: 3px 8px 3px 8px;background-color:#2fb92a;font-size:10;  color:#ffffff; border-radius: 10px;}
+.P_MAIN .colbox .right_col {width: 620px; height: 460px; position: static; margin:20px 0 0 100px; background-color: #fff; border-radius: 30px; box-shadow: 2px 2px 10px #383838; padding: 30px 40px 40px 40px;}
+.P_MAIN .mini_board {position: relative;}
+.P_MAIN .mini_board .tab::after {content: ""; display: block; clear: both;}
+.P_MAIN .mini_board .tab li {float: left;}
+.P_MAIN .mini_board .tab li + li {margin-left: 40px;}
+.P_MAIN .mini_board .tab li {float: left;}
+.P_MAIN .mini_board .tab li a {display: block; border-radius: 30px; position: relative; padding: 5px 25px 5px 25px; color: #f0f0f0;  font-size: 22px; font-weight: 700; margin-left: 20px; margin-top: 20px; border: solid; border-color: #f0f0f0; }
+.P_MAIN .mini_board .tab li a.on {color: #f0f0f0; background-color: #0b082e; border-color: #0b082e;}
+.P_MAIN .mini_board .tab li a.on::after {content: ""; display: block; position: absolute; left: 0; bottom: 0; width: 100%; height: 4px; }
+.P_MAIN .mini_board .tab .txt {margin-left: 60px; color: #ffffff; font-size: 25px; font-weight: 300;}
+.P_MAIN .mini_board .tab .txt2 {margin-left: 60px;color: #ffffff; font-size: 35px; font-weight: 700;}
+.P_MAIN .mini_board .more {display: block; position: absolute; right: 0; top: 16px; height: 16px; padding-left: 27px; color: #444; font-size: 18px; line-height: 16px; background: url(css/images/ico_plus.png) no-repeat;}
+.P_MAIN .mini_board .list ul {margin-top: 33px;}
+.P_MAIN .mini_board .list ul > li {position: relative;}
+.P_MAIN .mini_board .list ul > li + li {margin-top: 10px;}
+.P_MAIN .mini_board .list ul > li a {display: block; width: calc(100% - 100px); color: #666; font-size: 20px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
+.P_MAIN .mini_board .list ul > li a:hover {color: #222; text-decoration: underline;}
+.P_MAIN .mini_board .list ul > li span {position: absolute; right: 0; top: 4px; color: #aaa; font-size: 16px;}
+.P_MAIN .mini_board .list img {float: left; width: 60px;}
+.P_MAIN .mini_board .list h3 {color: #8d8d8d;}
+.P_MAIN .mini_board .list ul table {border: 1px solid#bbbbbb; border-collapse: collapse;}
+.P_MAIN .mini_board .list ul td {border: 1px solid #bbbbbb; padding: 3px 10px 4px 10px; font-size: 13px;}
+.P_MAIN .mini_board .list ul td.td_nm {border-right:none; text-align: left; font-weight: 700; color: #8d8d8d;}
+.P_MAIN .mini_board .list ul td.td_val {border-left:none; text-align: right; font-weight: 500;}
+.P_MAIN .mini_board .gallary {display: none;}
+.P_MAIN .mini_board .gallary > ul > div > img {width: 480px; height: 280px; position: relative;}
+.P_MAIN .mini_board .gallary > ul > div > div {position: absolute; left:80%; margin: 15px 10px 0 0;}
+.P_MAIN .banner_name {text-align : center; margin : 60px 0 30px 0;}
+.P_MAIN .banner_name h2 {color: #000; font-size: 35px; font-weight: 600;}
+.P_MAIN .banner_name p {margin-top: 10px; color: #666; font-size: 25px; line-height: 30px;}
+.P_MAIN .banner {margin-top: 100px;}
+.P_MAIN .banner::after {content: ""; display: block; clear: both;}
+.P_MAIN .banner > a {display: block; position: relative; float: left; width: calc(50% - 10px); height: 160px; padding: 38px 0 0 39px; border-radius: 25px; background: #fff; overflow: hidden;}
+.P_MAIN .banner > a.bn1::before {content: ""; display: block; position: absolute; right: 30px; top: -70px; width: 130px; height: 130px; border-radius: 50%; background: #bfe6e1;}
+.P_MAIN .banner > a.bn2::before {content: ""; display: block; position: absolute; right: 30px; top: -70px; width: 130px; height: 130px; border-radius: 50%; background: #fad6d7;}
+.P_MAIN .banner > a strong {display: block; padding-bottom: 8px; position: relative; color: #000; font-size: 26px; font-weight: 700;}
+.P_MAIN .banner > a span {display: block; color: #666; font-size: 18px; font-weight: 300; line-height: 24px;}
+.P_MAIN .banner > a:nth-child(1) {margin-right: 10px;}
+.P_MAIN .banner > a:nth-child(2) {margin-left: 10px;}
+.P_MAIN .banner_bot {Margin : 0 0 0 10% ; padding: 20px 0 70px 0;}
+.P_MAIN .banner_bot::after {content: ""; display: block; clear: both;}
+.P_MAIN .banner_bot > div {float: left; width: 700px; height: 480px; padding: 0 30px; border-radius: 30px; text-align: center; background: #fff;}
+.P_MAIN .banner_bot > div + div {margin-left: 20px;}
+.P_MAIN .banner_bot > div > div {height: 410px; padding-top: 30px; }
+.P_MAIN .banner_bot > div p {margin-top: 10px; color: #666; font-size: 20px; line-height: 10px;}
+.P_MAIN .banner_bot > div h2 {color: #000; font-size: 26px; font-weight: 700;}
+.P_MAIN .banner_bot > div a {display: inline-block; height: 70px; color: #666; font-size: 20px; line-height: 70px;}
+.P_MAIN .banner_bot > div a::before {content: ""; display: inline-block; width: 20px; height: 20px; margin-right: 9px; background: url(css/images/ico_more.png) no-repeat; vertical-align: -2px;}
+.P_MAIN .banner_bot > div.b1 > div > select {float: right; width:150px; padding:5px 10px 5px 10px; border:1px solid #999; background:url(css/images/ico_arrow_gray_15x9.png) no-repeat 95% 50%; border-radius:7px; margin:10px 10px 10px 10px; font-weight: 700;}
+.P_MAIN .banner_bot > div.b2 > div > p{margin-bottom: 35px;}
+    
+
+.R_BOARD .img {margin-top: 50px;}
+.R_BOARD .img img {max-width: 100%;}
+.R_BOARD > table {width: 98%; border: 1px solid#ccc; font-size: 20px; border-collapse: collapse; margin:20px 10px 20px 10px;}
+.R_BOARD > table tr {border: 1px solid#ccc;}
+.R_BOARD > table td {padding: 5px 0 5px 0;}
+.R_BOARD > table td.td_nm {width:15%; background-color:#eee ;border-left:none; text-align: center; font-weight: 700; color: #666;}
+.R_BOARD > table td.td_serch {padding-left: 30px;border-right:none;  font-weight: 500;}
+.R_BOARD > table td > select {float: left; width:200px; border-radius:5px; padding:7px 20px 7px 30px; border:1px solid #ccc; background:url(css/images/ico_arrow_gray_15x9.png) no-repeat 95% 50%; margin: 1px 0 0 5px; font-size: 15px; }
+.R_BOARD > table td > div {float: left; margin: 0 70px 0 40px;}
+.R_BOARD > table td label {float: left;padding: 0 30px 0 30px; font-size: 18px; }
+.R_BOARD > table td button {float: right;padding: 5px 30px 5px 25px; font-size: 18px; margin-right: 30px;  border-radius:5px; background-color: #0465be;color:#fff;width: 120px; height: 38px;}
+.R_BOARD > table td button img {margin-right: 5px;}
+.R_BOARD > h3 {color:#0465be; margin-left: 10px;}
+.R_BOARD > h3 > img {width: 20px; height: 20px; margin: 13px 10px 0 10px }
+
+.dataPicker{padding: 6px 10px 6px 7px; margin: 0 20px 0 20px; font-size: 15px; border-radius:5px; border:1px solid #ccc; text-align: center;}
+.S_Main {position: relative; background: #f5f5f5;}
+.S_Main::before {content: ""; display: block; position: absolute; left: 0; top: 0; width: 100%; height: 970px;  background: #fff; background-image: url("../../public/assets/images/main_bg_img.jpg");  background-size: 100% 970px;}
+.S_Main .c_wrap {position: relative; width: 100%;}
+
+.colbox::after {content: ""; display: block; clear: both;}
+.colbox > * {float: left;}
+.colbox .main_map {position:relative; width: 600px; margin: 10px 30px 0 150px;  height: 810px; background-size: 600px 810px;  background-image: url("../../public/assets/images/mainmap_b.png");}
+.colbox .main_map > li {position: absolute;}
+.colbox .main_map > li.spot01 {left: 140px ; top : 140px} /*인천*/ 
+.colbox .main_map > li.spot02 {left:  98px ; top : 215px} /*대산*/
+.colbox .main_map > li.spot03 {left: 170px ; top : 220px} /*평택*/
+.colbox .main_map > li.spot04 {left: 230px ; top : 565px} /*여수*/
+.colbox .main_map > li.spot05 {left: 240px ; top : 530px} /*광양*/
+.colbox .main_map > li.spot06 {left: 440px ; top : 510px} /*부산*/
+.colbox .main_map > li.spot07 {left: 460px ; top : 460px} /*울산*/
+.colbox .main_map > li > img {content: url("../../public/assets/images/ico_spot_green.png"); width: 45px;}
+.colbox .main_map > li.on > img {content: url("../../public/assets/images/ico_spot_orange.png"); width: 45px;}
+.colbox .main_map > li:hover img {content: url("../../public/assets/images/ico_spot_orange.png"); width: 45px;}
+.colbox .main_map > li:hover > a {display:block;}
+.colbox .main_map > li > a {color:#fff;display:none; padding: 3px 8px 3px 8px;background-color:#2fb92a;font-size:10; font-weight: 700; border-radius: 10px;}
+.colbox .main_data {width: 850px; height: 760px; position: static; margin:20px 0 0 100px; background-color: #fff; border-radius: 30px; box-shadow: 2px 2px 10px     #383838; padding: 30px 40px 40px 40px;}
+.S_Main .mini_board .list ul {margin-top: 33px;}
+.S_Main .mini_board .list ul > li {position: relative;}
+.S_Main .mini_board .list ul > li + li {margin-top: 10px;}
+.S_Main .mini_board .list ul > li a {display: block; width: calc(100% - 100px); color: #666; font-size: 20px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
+
+.S_Main .mini_board {position: relative;}
+.S_Main .mini_board .list img {float: left; width: 60px; margin: 0 10px 0 10px;}
+.S_Main .mini_board .list h2 {color: #8d8d8d;}
+.S_Main .mini_board .list ul table {border: 1px solid#bbbbbb; border-collapse: collapse;}
+.S_Main .mini_board .list ul td {border: 1px solid #bbbbbb; padding: 11px 10px 11px 10px; font-size: 20px;}
+.S_Main .mini_board .list ul td.td_nm {border-right:none; text-align: left; font-weight: 700; color: #8d8d8d;}
+.S_Main .mini_board .list ul td.td_val {border-left:none; text-align: right; font-weight: 500;}
+
+
+/*관리자 화면*/
+.C_BOARD {height: 100% !important; width: 90%; margin-left: 5%; overflow: overlay; overflow-x: hidden;}
+.C_BOARD::-webkit-scrollbar {width: 8px;} /* 스크롤바 너비*/
+.C_BOARD::-webkit-scrollbar-thumb {height: 30%; background: #555; border-radius: 10px;} /* 스크롤바의 길이, 색상, 모양 */
+
+.C_BOARD  h1  {float: left; margin: 13px 0% 20px 0; font-size: 40px; }
+.btn  {width: 100px; height: 30px; text-align: center; font-size: 15px; color: white; border-radius: 7px; margin: 0 5px 0 5px; border: none}
+.C_BOARD .right-box  {float: right; margin-top:30px; padding-top: 5px;}
+.C_BOARD .search-box  {width: 250px;height: 30px; border-radius: 5px; border: 1px solid #ccc; padding-left: 15px; font-size: 15px; margin: 0 5px 0 5px;}
+.C_BOARD .date-picker{margin: 1px 5px 0 5px; font-size: 15px; border-radius:5px !important; border:1px solid #ccc; text-align: center; width: 150px; height:30px;}
+
+.C_BOARD .btn-primary  {background-color: rgb(39, 187, 153);}
+.C_BOARD .btn-search  {background-color: rgb(41, 167, 252);}
+.C_BOARD .btn-warning  {background-color: rgb(255, 218, 111) ; }
+.C_BOARD .btn-danger  {background-color: rgb(253, 120, 122); }
+.C_BOARD .btn-primary:hover  {background-color: rgb(39, 158, 123); }
+.C_BOARD .btn-search:hover  {background-color: rgb(26, 153, 238); }
+.C_BOARD .btn-warning:hover  {background-color: rgb(255, 212, 85) ; }
+.C_BOARD .btn-danger:hover  {background-color: rgb(253, 80, 83); }
+
+.C_BOARD > .boardTable {margin: 20px 5% 20px 0;}
+.C_BOARD > .boardTable tr {border: 1px solid#ccc; }
+.C_BOARD > .boardTable thead {margin: 0;}
+.C_BOARD > .boardTable tbody {margin: 0;}
+.C_BOARD > .boardTable th, td  {border: 1px solid#ccc; padding: 7px 5px 7px 5px; text-align: center; font-size:18px; border-spacing: 0px;}
+
+.C_BOARD .modal-bg{position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0, 0, 0); opacity:0.5;}
+.C_BOARD .modal-content{position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:600px; height:400px; max-width:100%; max-height:100%; overflow:auto; background-color:white; border-radius: 10px; padding:20px;}
+.C_BOARD .modal-form > h1{float: left; margin: 0 0 20px 0;}
+.C_BOARD .modal-form input {width: 250px;height: 30px; border-radius: 5px; border: 1px solid #ccc; padding-left: 17px; font-size: 17px;}
+.C_BOARD .modal-form select {appearance:none; width: 250px;height: 30px; border-radius: 5px; border: 1px solid #ccc; padding-left: 17px; font-size: 17px; background: url("images/ico_arrow_gray_15x9.png") no-repeat 95% 50%;}
+.C_BOARD .modal-form tr {border: 1px solid#ccc; }
+.C_BOARD .modal-form td  {padding: 5px 5px 5px 5px; text-align: center; font-size:18px;}
+.C_BOARD .modal-form button{float: right; margin: 20px 0 0 0}
+.C_BOARD .modal-form .ipt-read {background-color: #ccc; color: #555;}
+
+.label > td >input{text-align: center; font-size:18px; border: none; width: 95%;  }
+.label > td >input:focus {outline:none;}
+.btn-block{display:block;}  
+.btn-hidden{display:none;}
+.modify > td >input{width: 95%; height: 30px; border-radius: 5px; border: 1px solid #ccc; text-align: center; font-size:18px; }
+.modify > td >input:read-only {background-color: #ccc; color: #555;outline:none;}
+.modify > td >input:read-only:focus {outline:none;}
+
+
+/*리스트 조회 페이지네이션*/
+.pagination{ float: center;  list-style: none;  text-align: center;  border-radius: 3px;  color: black;  }
+.page-item{ display: inline-block; font-size: 17px; font-weight: 600; padding: 5px; border-radius: 5px; width: 60px;}
+.page-item:hover { cursor: pointer; color: white; background-color: #263a6c; }
+.page-item:focus::after { color: white; background-color: #263a6c; }
+.page-link:hover::after, .page-link:focus::after { border-radius: 100%; color: white; background-color: #263a6c; }
+.page-item-selected { color: white; background-color: #263a6c; }
+
+.select-post{appearance:none; float: left; width:60px; height:35px; border-radius:5px; border:1px solid #ccc; padding-left:10px; font-size:15px; margin: 0 0 0 5px; background: url("images/ico_arrow_gray_15x9.png") no-repeat 85% 50%;}
+
+.refresh-img:hover{background-image:url("images/ico_refresh_black.png");}
