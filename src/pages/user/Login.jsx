@@ -28,7 +28,6 @@ function Login({onChangeLogin}) {
             pwfocus.current.focus();
         } else{
             setAlertMsg(<></>);
-            console.log(process.env.REACT_APP_API_URL);
             fetch(process.env.REACT_APP_API_URL+'/auth/signin', 
             { method: "POST",
              headers: {
