@@ -59,8 +59,8 @@ function ManagerRole(props) {
             fetch(url, {method:"DELETE", headers: {'Authorization': jToken}})
             .then(response => response.json())
             .then(data=> data.status === "success" && alert("삭제되었습니다"));
+            dataList();
         };
-        dataList();
     };
 
     const updateHandler = (data) => {
